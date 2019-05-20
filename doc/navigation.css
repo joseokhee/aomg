@@ -1,0 +1,92 @@
+﻿body {
+  background-color : black;
+}
+/*네비게이션 */
+nav {
+  text-align:center;
+  position : fixed;
+  height : 900px;
+  width : 280px;
+  left : -280px;
+  top : 0px;
+  background-color : rgba(0,0,0,5);
+  transition : left 350ms ease;    /* 부드럽게 스크롤 */
+  z-index : 20;
+}
+/* 네비게이션 마우스 오버 */
+nav:hover {
+  left : 0px;
+}
+/* 네비게이션 아이콘 */
+#bookmark {
+  position : absolute;
+  background-color : black;
+  width : 60px;
+  min-height : 50px;
+  left : 280px;
+  background-color : black;
+  color : rgba(255,255,255,1);
+  font-size : 33px;
+  line-height : 60px;
+  text-align : center;
+}
+.ul {
+  list-style : none;
+  padding : 0px;
+}
+.li_page {
+  font-family : 'Source Sans Pro';
+  font-size : 25px;
+  line-height : 50px;
+  text-shadow : 0px 1px 3px rgba(0,0,0,0.5);
+  /*margin-left : 30px;*/z
+}
+.li_sns {
+  font-family : 'Source Sans Pro';
+  font-size : 15px;
+  line-height : 30px;
+  text-shadow : 0px 1px 3px rgba(0,0,0,0,5);
+}
+/* 내용물 */
+nav a {
+  text-decoration : none;
+  color : rgba(255,255,255,1);
+  display : inline-block;
+  transition : all 400ms ease;
+}
+nav a:hover {
+  cursor : pointer;
+  color : red;
+}
+nav a:active {
+  box-shadow : inset 1px 1px 4px rgba(0,0,0,0.9);
+}
+/* 구분선 */
+#sep {
+  margin : 20px;
+  box-shadow : 0px 1px 2px rgba(0,0,0,0.5);
+  width : 235px;
+  height : 2px;
+  background-color : #fff;
+  text-align : center;
+}
+.slideLeft {
+  -webkit-animation : slideLeft 400ms ease-in;
+  animation : slideLeft 400ms ease-in;
+  animation-fill-mode : forwards;
+  -webkit-animation-fill-mode : forwards;
+}
+.slideBack {
+  -webkit-animation : slideBack 400ms ease-in;
+  animation : slideBack 400ms ease-in;
+  animation-fill-mode : forwards;
+  -webkit-animation-fill-mode : forwards;
+}
+.footer {
+  top: 660px;
+  left: 620px;
+  padding-bottom : 0px;
+  color:#9a9a9a;
+  font-size: 12px;
+  position: absolute;
+}

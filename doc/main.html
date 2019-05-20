@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <title>AOMG OFFICIAL</title>
+  <head>
+    <meta charset = "UTF-8">
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+    <script type = "text/javascript" src = "dist/jR3DCarousel.min.js"></script>
+    <script type = "text/javascript" src = "main.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "navigation.css">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+  </head>
+  <body>
+    <!-- 네비게이션 바 -->
+    <nav id = "nav">
+      <div id = "bookmark">&#9776;</div>
+      <div id = "vertical-shadow-nav"></div>
+      <ul class = "ul">
+        <li class = "li_page"><a href = "main.html">Main</a></li>
+        <li class = "li_page"><a href = "news.html">News</a></li>
+        <li class = "li_page"><a href = "artist.html">Artist</a></li>
+        <li class = "li_page"><a href = "about.html">ABOUT</a></li>
+        <li class = "li_page"><div id = "sep"></div></li>
+      </ul>
+      <ul class = "ul">
+        <li class = "li_sns" id = "facebook"><a>Facebook</a></li>
+        <li class = "li_sns" id = "instagram"><a>Instagram</a></li>
+        <li class = "li_sns" id = "youtube"><a>Youtube</a></li>
+      </ul>
+    </nav>
+    <!-- 오디오 -->
+    <div class = "icon" style = "text-align : center">
+    <a href="main.html">
+      <img src = "../images/aomg.png" width = "291.456px" height = "104.448px" />
+    </a>
+    </div>
+    <div class = "player" style = "text-align : center">    <!-- HTML 오디오 태그 이용해서 이미지로 노래 재생 -->
+      <audio id = "myAudio" autoplay = ""></audio>
+      <img id = "eq" src = "../images/equi.gif" width = "40px" height = "40px" style = "margin-left : auto; margin-right :10px ;">
+      <img id = "back" src = "../images/back.png" style = "margin-left : auto; margin-right :20px ;">
+      <img id = "image" src = "../images/pause.png" style = "margin-left : auto; margin-right : auto;">
+      <img id = "next" src = "../images/next.png" style = "margin-left : 20px; margin-right : auto;">
+      <font color = "white" id = "music"></font>
+    </div>
+    <!-- 3D -->
+    <div class = "jR3DCarouselGalleryCustomeTemplate">
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "ARTIST.html">
+          <img src = "../images/artist.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color = white>X ARTIST X</font>
+        </div>
+      </div>
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "news.html">
+        <img src = "../images/news.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color=white>X NEWS X</font>
+        </div>
+      </div>
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "about.html">
+        <img src = "../images/about.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color = white>X ABOUT X</font>
+        </div>
+      </div>
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "ARTIST.html">
+          <img src = "../images/artist.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color = white>X ARTIST X</font>
+        </div>
+      </div>
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "news.html">
+        <img src = "../images/news.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color = white>X NEWS X</font>
+        </div>
+      </div>
+      <div class = "jR3DCarouselCustomSlide">
+        <a href = "about.html">
+        <img src = "../images/about.jpg" />
+        </a>
+        <div class = "captions">
+          <font size = 5px color = white>X ABOUT X</font>
+        </div>
+      </div>
+    </div>
+    <div class = "foot">
+        2013 COPYRIGHT ⓒ AOMG LTD, ALL RIGHT RESERVED
+      </font>
+    </div>
+  </body>
+</html>

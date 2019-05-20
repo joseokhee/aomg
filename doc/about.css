@@ -1,0 +1,37 @@
+body {
+  background-color : black;
+  text-align : center;
+  font-family : "나눔고딕", NanumGothic;
+}
+.div {
+  padding-top : 3.5%;
+  color : #feffff;
+  text-align : center;
+}
+.main {
+  color : #feffff;
+  background-color : #e32525;
+  font-weight : 900;
+  font-size : 50px;
+  padding : 0.5%;
+  text-align : center;
+}
+.intro {
+  padding-top : 3.5%;
+  font-size : 25px;
+}
+.contact {
+  padding-top : 3.5%;
+  padding : 5.5%;
+  color : #d9d9d9;
+  font-size : 18px;
+  text-align : center;
+}
+.foot {
+    padding-top : 3.5%;
+    text-align : center;
+    padding-bottom : 0%;
+    color : #9a9a9a;
+    margin : 0px 0px 0px 0px;
+    font-size : 12px;
+}

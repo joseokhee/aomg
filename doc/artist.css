@@ -1,0 +1,254 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+/*div {
+    color: white;
+    font-family:"나눔고딕", NanumGothic;
+    font-weight:900;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}*/
+.title {
+  color : white;
+  font-family : "나눔고딕" , NanumGothic;
+  font-weight : 900;
+  font-size : 50px;
+  text-align : center;
+  padding-top : 10px;
+  padding-bottom : 10px;
+}
+* {
+  margin : 0;
+  padding : 0;
+  outline : none;
+  list-style : none; /*리스트 스타일 없음 => 문단나누는 점같은거 없음! */
+  /*text-decoration:none;   */
+  box-sizing : border-box;
+}
+html, body {
+  height : 100%;
+  width : 100%;
+}
+body {
+  background : #000;
+  font-family : 'Roboto', sans-serif;
+  overflow : hidden; /*내용이 넘치면 자름 스크롤 x*/
+}
+.perso {
+  width : 100%;
+  height : 100%;
+}
+.perso ul{
+  width : 100%;
+  height : 100%;
+}
+.perso ul li {
+  float : left;
+  width : calc(100% / 5);
+  background : #fff;
+  height : 100%;
+  box-shadow : 0 0 100px rgba(0,0,0,0.8) inset;
+  position : relative;
+  cursor : pointer;
+  background-size : cover !important;
+  transition : 0.7s all ease-in-out;
+  -webkit-transition : 0.7s all ease-in-out;
+}
+.perso ul li.adapt {
+  width : 15%;
+}
+.perso ul li.hovered{
+  width : 40%;
+}
+.perso ul li p{   /*인물 이름 위치 */
+  position : absolute;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  margin : auto;
+  height : 80px;
+  line-height :90px;
+  width : 150px;
+  text-transform : uppercase;
+  text-align : center;
+  background : rgba(0,0,0,0.8);
+  color : #fff;
+  transition : 0.6s all ease-in-out 0.2s;
+  -webkit-transition : 0.6s all ease-in-out 0.2s;
+}
+.perso ul li p span{    /*인물 이름 꾸미기*/
+  position : absolute;
+  top : -20px;
+  left : 0;
+  right : 0;
+  margin : 0 auto;
+  color : #000;
+  background : #fff;
+  height : 40px;
+  line-height : 40px;
+  width : 40px;
+  overflow : hidden;
+  transform : perspective(1000px) rotateX(-90deg) rotateZ(45deg);
+  -webkit-transform : perspective(1000px) rotateX(-90deg) rotateZ(45deg);
+  transition : 0.4s all ease-out 0.2s;
+  -webkit-transition : 0.4s all ease-out 0.2s;
+}
+.perso ul li p span:after {
+  content : "+";
+  position : absolute;
+  top : 0;
+  left : 0;
+  height : 40px;
+  line-height : 40px;
+  text-align : center;
+  width : 40px;
+  font-size : 24px;
+  transform : rotate(-50deg);
+  -webkit-transform : rotate(-45deg);
+}
+.perso ul li:hover p {
+  transform : scale(1.4);
+  -webkit-transform : scale(1.4);
+  width : 200px;
+  letter-spacing :2px;
+}
+.perso ul li:hover p:before {
+  opacity : 1;
+  transform : scaleX(0);
+  -webkit-transform : scaleX(0);
+}
+.perso ul li:hover p span {
+  top :-20px;
+  transform : perspective(1000px) rotateX(0deg) rotateZ(45deg);
+  -webkit-transform : perspective(1000px) rotateX(0deg) rotateZ(45deg);
+    transition : 0.4s all ease-out 0.8s;
+  -webkit-transition : 0.4s all ease-out 0.8s;
+}
+.perso ul li:nth-of-type(1) {
+  background : url('../images/loco.jpg') no-repeat center center;
+}
+.perso ul li:nth-of-type(2) {
+  background : url('../images/gray.jpg') no-repeat center center;
+}
+.perso ul li:nth-of-type(3) {
+  background : url('../images/jay.jpg') no-repeat center center;
+}
+.perso ul li:nth-of-type(4) {
+  background : url('../images/simon.jpg') no-repeat center center;
+  background-size : cover;
+}
+.perso ul li:nth-of-type(5) {
+  background : url('../images/woo.jpg') no-repeat center center;
+}
+article {
+  display : none;
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background-size : cover;
+}
+article:nth-of-type(1) {
+  background : url('../images/loco.jpg') no-repeat top center;
+}
+article:nth-of-type(2) {
+  background : url('../images/gray.jpg') no-repeat top center;
+}
+article:nth-of-type(3) {
+  background : url('../images/jay.jpg') no-repeat top center;
+}
+article:nth-of-type(4) {
+  background : url('../images/simon.jpg') no-repeat top center;
+}
+article:nth-of-type(5) {
+  background : url('../images/woo.jpg') no-repeat top center;
+}
+article .text-wrap {
+  position : absolute;
+  top : 0;
+  left : 150px;
+  bottom : 0;
+  width : 600px;
+  height : 400px;
+  background : rgba(0,0,0,0.7);
+  color : #fff;
+  margin : auto 0;
+  box-sizing : border-box;
+  padding : 80px 40px;
+  opacity : 0;
+  -webkit-animation : 0.6s fadeInLeft ease-out forwards 0.8s;
+}
+article h2 {
+  margin-bottom : 20px;
+  font-size : 48px;
+  text-transform : uppercase;
+}
+article p {
+  opacity : 0.5;
+  letter-spacing : 1.5px;
+  font-weight : 300;
+  font-size : 16px;
+  line-height : 24px;
+}
+article span.close {
+  color : #fff;
+  position : absolute;
+  top :12%;
+  left : 80%;
+  background : rgba(0,0,0,0.7);
+  height : 50px;
+  line-height : 50px;
+  text-align : center;
+  width : 50px;
+  cursor : pointer;
+  opacity : 0;
+  animation : 0.6s fadeInLeft ease-out forwards 1.2s;
+  -webkit-animation : 0.6s fadeInLeft ease-out forwards 1.2s;
+}
+article span.close:after {
+  content : "Back to selection";
+  position : absolute;
+  width : 80px;
+  line-height : 10px;
+  color : #ffffff;
+  bottom :-30px;
+  left : -15px;
+  text-transform : uppercase;
+  font-size : 10px;
+}
+svg {
+  display : none;
+}
+/*눌렀을때 인물 소개*/
+@keyframes fadeInLeft {
+  from {
+    opacity : 0;
+    -webkit-transform : translate3d(-100%, 0, 0);
+    transform : translate3d(-100%, 0, 0);
+    filter : url('#blur');
+    -webkit-filter : url('#blur');
+  }
+  60% {
+    opacity : 1;
+    -webkit-transform : translate3d(8%, 0, 0);
+    transform : translate3d(8%, 0, 0);
+    filter : url('#blur');
+    -webkit-filter : url('#blur');
+  }
+  80% {
+    opacity : 1;
+    -webkit-transform : translate3d(-5%, 0, 0);
+    transform : translate3d(-5%, 0, 0);
+    filter : url('#blur');
+    -webkit-filter : url('#blur');
+  }
+   100% {
+    opacity : 1;
+    -webkit-transform : none;
+    transform : none;
+    filter : none;
+    -webkit-filter : none;
+  }
+}

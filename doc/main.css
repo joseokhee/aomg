@@ -1,0 +1,28 @@
+.foot {
+  top : 740px;
+  left : 620px;
+  padding-bottom : 0px;
+  color : #9a9a9a;
+  font-size : 12px;
+  position : absolute;
+}
+.jR3DCarouselGalleryCustomeTemplate {
+  margin : 0 auto; /* optional - if want to center align */
+}
+.jR3DCrouselGalleryCustomeTemplate .captions {
+  position : relative;
+  padding: 4px 0;
+  bottom: 27px;
+  background: #0c0c0c;
+  display : block;
+  }
+body {
+  background-color:black;
+  text-align:center;
+}
+img:hover {
+  cursor : pointer;
+}
+#eq {
+  cursor : default;
+}
